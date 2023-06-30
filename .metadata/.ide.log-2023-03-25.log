@@ -1,0 +1,42 @@
+2023-03-25 09:18:55,684 [INFO] Activator:176 - 
+
+
+2023-03-25 09:18:55,700 [INFO] Activator:177 - !SESSION log4j initialized
+2023-03-25 09:19:09,997 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2023-03-25 09:19:33,926 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2023-03-25 09:19:33,942 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-03-25 09:19:33,943 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2023-03-25 09:45:40,616 [INFO] Activator:176 - 
+
+
+2023-03-25 09:45:40,616 [INFO] Activator:177 - !SESSION log4j initialized
+2023-03-25 09:45:45,270 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2023-03-25 09:46:07,730 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2023-03-25 09:46:07,730 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-03-25 09:46:07,730 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2023-03-25 11:49:18,216 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2023-03-25 11:49:20,221 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 11:49:22,237 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 11:59:42,157 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2023-03-25 11:59:44,159 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 11:59:48,035 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2023-03-25 12:02:26,027 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 12:02:28,031 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 12:02:30,048 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 12:08:21,954 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2023-03-25 12:08:30,608 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: connect timed out
+2023-03-25 12:08:33,619 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2023-03-25 12:08:35,625 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: connect timed out
+2023-03-25 12:08:37,627 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: connect timed out
+2023-03-25 12:09:39,182 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 12:09:46,202 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2023-03-25 12:09:48,209 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 12:32:42,445 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 12:32:44,449 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 12:32:46,450 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-03-25 12:32:47,326 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Exception in thread "SWV client thread" java.lang.NullPointerException
+2023-03-25 12:32:47,327 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.debugTrace(SWVPlugin.java:85)
+2023-03-25 12:32:47,327 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.TRACE(SWVClient.java:768)
+2023-03-25 12:32:47,327 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.readByte(SWVClient.java:296)
+2023-03-25 12:32:47,327 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:277)
+2023-03-25 12:32:47,327 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:313)

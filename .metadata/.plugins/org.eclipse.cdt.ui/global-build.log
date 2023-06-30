@@ -1,0 +1,84 @@
+14:36:02 **** Incremental Build of configuration Debug for project traffic_light ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/FreeRTOS/include" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/Config" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/OS" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/SEGGER" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/FreeRTOS/include" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/Config" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/OS" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'task1_handler':
+../Core/Src/main.c:239:13: warning: variable 'xLastWakeTime' set but not used [-Wunused-but-set-variable]
+  239 |  TickType_t xLastWakeTime;
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'task2_handler':
+../Core/Src/main.c:251:45: warning: variable 'xLastWakeTime3' set but not used [-Wunused-but-set-variable]
+  251 |  TickType_t xLastWakeTime1, xLastWakeTime2, xLastWakeTime3;
+      |                                             ^~~~~~~~~~~~~~
+../Core/Src/main.c:251:29: warning: variable 'xLastWakeTime2' set but not used [-Wunused-but-set-variable]
+  251 |  TickType_t xLastWakeTime1, xLastWakeTime2, xLastWakeTime3;
+      |                             ^~~~~~~~~~~~~~
+../Core/Src/main.c:251:13: warning: variable 'xLastWakeTime1' set but not used [-Wunused-but-set-variable]
+  251 |  TickType_t xLastWakeTime1, xLastWakeTime2, xLastWakeTime3;
+      |             ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'task3_handler':
+../Core/Src/main.c:282:45: warning: variable 'xLastWakeTime3' set but not used [-Wunused-but-set-variable]
+  282 |  TickType_t xLastWakeTime1, xLastWakeTime2, xLastWakeTime3;
+      |                                             ^~~~~~~~~~~~~~
+../Core/Src/main.c:282:29: warning: variable 'xLastWakeTime2' set but not used [-Wunused-but-set-variable]
+  282 |  TickType_t xLastWakeTime1, xLastWakeTime2, xLastWakeTime3;
+      |                             ^~~~~~~~~~~~~~
+../Core/Src/main.c:282:13: warning: variable 'xLastWakeTime1' set but not used [-Wunused-but-set-variable]
+  282 |  TickType_t xLastWakeTime1, xLastWakeTime2, xLastWakeTime3;
+      |             ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'task4_handler':
+../Core/Src/main.c:312:13: warning: variable 'xLastWakeTime' set but not used [-Wunused-but-set-variable]
+  312 |  TickType_t xLastWakeTime;
+      |             ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "traffic_light.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\M.Tech\Sem2\minor_project\Workspace_minorspace\traffic_light\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="traffic_light.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: traffic_light.elf
+ 
+arm-none-eabi-size   traffic_light.elf 
+arm-none-eabi-objdump -h -S  traffic_light.elf  > "traffic_light.list"
+   text	   data	    bss	    dec	    hex	filename
+  26456	    128	  84512	 111096	  1b1f8	traffic_light.elf
+Finished building: default.size.stdout
+ 
+Finished building: traffic_light.list
+ 
+14:36:12 **** Incremental Build of configuration Debug for project traffic_light ****
+make -j8 all 
+arm-none-eabi-size   traffic_light.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26456	    128	  84512	 111096	  1b1f8	traffic_light.elf
+Finished building: default.size.stdout
+ 
+18:55:54 **** Build of configuration Debug for project notification ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/FreeRTOS/include" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/Config" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/OS" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "notification.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\M.Tech\Sem2\minor_project\Workspace_minorspace\notification\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="notification.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: notification.elf
+ 
+arm-none-eabi-size   notification.elf 
+arm-none-eabi-objdump -h -S  notification.elf  > "notification.list"
+   text	   data	    bss	    dec	    hex	filename
+  25744	    128	  84512	 110384	  1af30	notification.elf
+Finished building: default.size.stdout
+ 
+Finished building: notification.list
+ 
+18:56:34 **** Incremental Build of configuration Debug for project notification ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/FreeRTOS/include" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/Config" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/OS" -I"E:/M.Tech/Sem2/minor_project/Workspace_minorspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "notification.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\M.Tech\Sem2\minor_project\Workspace_minorspace\notification\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="notification.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: notification.elf
+ 
+arm-none-eabi-size   notification.elf 
+arm-none-eabi-objdump -h -S  notification.elf  > "notification.list"
+   text	   data	    bss	    dec	    hex	filename
+  25744	    128	  84512	 110384	  1af30	notification.elf
+Finished building: default.size.stdout
+ 
+Finished building: notification.list
+ 
+18:57:12 **** Incremental Build of configuration Debug for project notification ****
+make -j8 all 
+arm-none-eabi-size   notification.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25744	    128	  84512	 110384	  1af30	notification.elf
+Finished building: default.size.stdout
+ 

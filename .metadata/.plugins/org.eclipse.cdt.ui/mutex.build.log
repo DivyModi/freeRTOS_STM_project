@@ -1,0 +1,10 @@
+21:49:37 **** Incremental Build of configuration Debug for project mutex ****
+make -j8 all 
+arm-none-eabi-size   mutex.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33216	    128	  84656	 118000	  1ccf0	mutex.elf
+Finished building: default.size.stdout
+ 
+
+21:49:37 Build Finished. 0 errors, 0 warnings. (took 242ms)
+
